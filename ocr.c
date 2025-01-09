@@ -29,7 +29,6 @@ void ocr(const char *f) {
 	pixDestroy(&i);
 }
 
-
 int main(int z, char *x[]) {
 	if (z < 2) {
 		fprintf(stderr, "usage: %s <image>\n", x[0]);
