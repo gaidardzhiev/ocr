@@ -11,7 +11,7 @@ $(BINS): %: %.s
 endif
 
 test:
-	@./ocr image.png | grep "A" && printf "success...\n" || printf "error...\n"
+	@./ocr image.png | grep "A" > /dev/null 2>&1 && printf "success...\n" || printf "error...\n"
 
 clean:
 	rm $(BINS)
